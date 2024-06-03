@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tool support Google Cloud Storage</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Upload Image</h1>
+        <form  class="mt-3" action="/api/v1/product/upload" method="post" enctype="multipart/form-data">
+            <label for="files">Detail Image</label>
+            <input type="file" id="detailImages" multiple='multiple' name="detailImages[]"/>
+            <input type="text" name="title" placeholder="Title of images">
+            <select name="folder" id="folder">
+                <option value="cay-ban-cong">Cây ban công</option>
+                <option value="cay-de-ban">Cây để bàn</option>
+                <option value="cay-trong-nha">Cây trong nhà</option>
+                <option value="vat-tu">Vật tư</option>
+            </select>
+            <button type="submit" id="upload">Upload</button>
+        </form>
+    </div>
+</body>
+</html>
