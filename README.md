@@ -6,4 +6,5 @@ npm i
 ```bash
 npm run dev
 ```
-3. Truy cập `http://localhost:8000/api/v1/product/`
+3. Tải file `key.json`
+4. Truy cập `http://localhost:8000/api/v1/product/`
